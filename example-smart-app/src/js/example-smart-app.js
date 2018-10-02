@@ -15,7 +15,6 @@
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
                     query: {
-                      _count: 2,
                       code: {
                         $or: ['http://loinc.org|8462-4']
                       }
