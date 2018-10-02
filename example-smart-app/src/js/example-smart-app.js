@@ -1,9 +1,11 @@
 (function(window){
   window.extractData = function() {
+     window.alert("extractData");
     var ret = $.Deferred();
 
     function onError() {
       console.log('Loading error', arguments);
+      window.alert("arguments:" + arguments);
       ret.reject();
     }
 
