@@ -17272,7 +17272,6 @@ function providers(fhirServiceUrl, provider, callback, errback){
     });
     return;
   }
-window.alert("meta:" + stripTrailingSlash(fhirServiceUrl) + "/metadata");
   Adapter.get().http({
     method: "GET",
     url: stripTrailingSlash(fhirServiceUrl) + "/metadata"
